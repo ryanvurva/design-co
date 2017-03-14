@@ -21,7 +21,22 @@ h2 {
 }
 
 nav .top-menu {
-  padding: 30px;
+  margin: 0 0;
+  padding: 0;
+
+}
+.top-menu {
+  background-color: rgb(213, 214, 212);
+}
+
+ul.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0;
+  border-top: 0.2em solid red;
 }
 
 #all-content {
@@ -38,7 +53,7 @@ nav .top-menu {
   display: flex;
   justify-content: space-around;
   text-align: left;
-  margin-left: 45px;
+  margin-left: 30px;
 }
 
 #lower a {
@@ -48,18 +63,6 @@ nav .top-menu {
   width: 150px;
 }
 
-.top-menu {
-  background-color: rgb(213, 214, 212);
-}
-
-ul.navigation {
-  padding-left: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-top: 0.2em solid red;
-}
 
 a.nav {
   color: inherit;

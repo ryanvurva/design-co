@@ -6,3 +6,90 @@ body {
   margin: 0;
   font: 16px / 1 sans-serif;
 }
+
+h1.logo {
+  background-image: url('/images/designco-logo.png');
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  width: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+nav .top-menu {
+  padding: 30px;
+}
+
+#all-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+#upper {
+  max-width: 350px;
+  margin: auto;
+}
+
+#lower {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  margin-left: 45px;
+}
+
+#lower a {
+  font-size: 0.7em;
+}
+#lower > div {
+  width: 150px;
+}
+
+.top-menu {
+  background-color: rgb(213, 214, 212);
+}
+
+ul.navigation {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 0.2em solid red;
+}
+
+a.nav {
+  color: inherit;
+  text-decoration: none;
+}
+
+.details {
+  text-align: center;
+  margin: auto;
+}
+
+.pics-area {
+  display: flex;
+  justify-content:center;
+}
+
+.pics {
+  margin: 0.5em;
+}
+
+.new {
+  flex:1;
+}
+
+
+.modern-layout {
+  width: 500px;
+  flex: 3;
+}
+
+.modern-layout p {
+  column-count: 3;
+}

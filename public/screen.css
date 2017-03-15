@@ -21,16 +21,17 @@ h2 {
 }
 
 nav {
+  background-color: rgb(213, 214, 212);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  right: 0;
 }
 
 nav .top-menu {
   margin: 0 auto;
   padding: 0 75px;
-
 }
 
 img {
@@ -41,9 +42,6 @@ img:hover {
   border-color: #000;
 }
 
-.top-menu {
-  background-color: rgb(213, 214, 212);
-}
 
 ul.navigation {
   list-style: none;
@@ -127,7 +125,14 @@ a.nav {
 }
 
 
+/*responsive code for mobile use*/
+
 @media only screen and (max-width: 600px) {
+
+  nav {
+    flex-wrap: wrap;
+  }
+
   .pics-area {
     display: block;
   }
@@ -145,11 +150,12 @@ a.nav {
     padding: 20px;
   }
 
-  .modern-layout p {
-    column-count: 1;
-  }
   #lower > div {
     width: 100%;
+  }
+
+  .modern-layout p {
+    column-count: 1;
   }
 
 }

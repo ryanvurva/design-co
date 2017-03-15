@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 100px 0 0 ;
   font: 16px / 1 sans-serif;
 }
 
@@ -20,12 +20,27 @@ h2 {
   font-size: 2em;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 nav .top-menu {
   margin: 0 auto;
   padding: 0 75px;
-  max-width: 740px;
 
 }
+
+img {
+  border: 1px solid #FFF;
+}
+
+img:hover {
+  border-color: #000;
+}
+
 .top-menu {
   background-color: rgb(213, 214, 212);
 }
@@ -40,7 +55,15 @@ ul.navigation {
   border-top: 0.2em solid red;
 }
 
-#all-content {
+.top-menu li a {
+  padding: 20px 10px;
+}
+
+.top-menu li a:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+#all-content, .top-menu {
     max-width: 600px;
     margin: auto;
 }
@@ -54,6 +77,7 @@ ul.navigation {
 #lower a {
   font-size: 0.7em;
 }
+
 #lower > div {
   width: 150px;
 }
@@ -78,8 +102,8 @@ a.nav {
   margin: 0.5em;
 }
 
-.new {
-  flex:1;
+.pics:first-child {
+   width: 350px;
 }
 
 #lower {
@@ -89,6 +113,10 @@ a.nav {
   margin-left: 30px;
 }
 
+.new {
+  flex:1;
+}
+
 .modern-layout {
   width: 500px;
   flex: 3;
@@ -96,4 +124,32 @@ a.nav {
 
 .modern-layout p {
   column-count: 3;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .pics-area {
+    display: block;
+  }
+
+  .pics {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+
+  #lower {
+    display: block;
+    padding: 20px;
+  }
+
+  .modern-layout p {
+    column-count: 1;
+  }
+  #lower > div {
+    width: 100%;
+  }
+
 }

@@ -21,8 +21,9 @@ h2 {
 }
 
 nav .top-menu {
-  margin: 0 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 75px;
+  max-width: 740px;
 
 }
 .top-menu {
@@ -49,12 +50,6 @@ ul.navigation {
   margin: auto;
 }
 
-#lower {
-  display: flex;
-  justify-content: space-around;
-  text-align: left;
-  margin-left: 30px;
-}
 
 #lower a {
   font-size: 0.7em;
@@ -87,6 +82,12 @@ a.nav {
   flex:1;
 }
 
+#lower {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  margin-left: 30px;
+}
 
 .modern-layout {
   width: 500px;
